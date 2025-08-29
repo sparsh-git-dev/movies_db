@@ -1,16 +1,84 @@
-# movies_db
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Movies Database Application
 
-A few resources to get you started if this is your first Flutter project:
+## Overview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The Movies Database application is built using the TMDB API to show trending and now playing movies. The app allows users to search for movies, bookmark their favorite ones, and view a saved movies page. It also features offline functionality by saving responses in a local database, ensuring a seamless experience for users. Additionally, the app supports network calls to update search results as users type and includes a fake "deep link" feature to share movies within the app.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+1. **Home Page**: Displays a list of trending and now playing movies fetched from the TMDB API.
+2. **Movie Details Page**: Allows users to view detailed information about a selected movie.
+3. **Bookmarking**: Users can bookmark movies to a saved movies page.
+4. **Offline Functionality**: Saves movie data in a local database and loads it from there for offline use.
+5. **Search**: Users can search for movies using the search tab.
+6. **Debounced Search**: As users type in the search field, the results are updated after a brief delay, making network calls only when the user stops typing.
+7. **Deep Linking (Andoroid only)**: Users can share movies with others, and the deep link will take them directly to the shared movie in the app.
+
+## Technologies Used
+
+* **Flutter**: Framework for building the application.
+* **TMDB API**: Used to fetch trending, now playing, and search movie data.
+* **Retrofit**: For networking and API calls.
+* **MVVM Architecture**: To structure the app for maintainability and testability.
+* **Repository Pattern**: For managing data and abstraction of data sources.
+* **Local Database (Getstorage)**: For storing movie data offline.
+
+## Architecture
+
+The application follows the **MVVM** architecture pattern, separating the application logic into:
+
+* **Model**: Represents the data, including movies.
+* **View**: The UI components (widgets) displaying the data.
+* **ViewModel**: Handles the logic and interacts with the model to prepare data for the view.
+
+## Installation
+
+### Prerequisites
+
+1. Flutter SDK: [Installation Guide](https://flutter.dev/docs/get-started/install)
+2. Android Studio or Visual Studio Code (with Flutter plugin) for code editing and debugging.
+3. An active TMDB API key: [TMDB API](https://www.themoviedb.org/documentation/api)
+
+### Steps to Set Up
+
+1. Clone this repository:
+
+   ```bash
+   git clone <repository-url>
+   cd movies-database-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. Add your TMDB API key in the configuration file:
+
+   * Go to `lib/network/api.dart` and replace `<your-api-key>` with your TMDB API key.
+
+4. Run the app:
+
+   ```bash
+   flutter run
+   ```
+
+## Screenshots
+
+\[Insert screenshot(s) here]
+
+## Usage
+
+1. **Home Page**: Displays trending and now playing movies.
+2. **Search**: Type a movie name to search. The app will make network calls after a slight delay when the user stops typing.
+3. **Bookmarking**: Users can bookmark movies, which will be saved in a local database and shown on the "Saved Movies" page.
+4. **Offline Mode**: The app works offline by loading saved movie data from the local database.
+
+## Compatibility
+
+* **Android**: Tested on Android 10 and higher.
+* **iOS**: Compatible with iOS 13.0 and above.

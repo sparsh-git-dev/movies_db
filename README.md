@@ -69,18 +69,25 @@ The application follows the **MVVM** architecture pattern, separating the applic
 
 ## Screenshots
 
-### Row 1:
-![Simulator Screenshot 1](https://github.com/user-attachments/assets/99b1849e-87b6-46b5-9ebc-fbe1972c7b40)
-![Simulator Screenshot 2](https://github.com/user-attachments/assets/3b5a3556-597c-4c68-b1d4-7ad8e03dc5d4)
+## Screenshots of the Application
 
-### Row 2:
-![Simulator Screenshot 3](https://github.com/user-attachments/assets/505dbf10-b20c-417a-b285-908830b46aec)
-![Simulator Screenshot 4](https://github.com/user-attachments/assets/7a918389-b834-4bb1-aef8-ec678a8d169d)
 
-### Row 3:
-![Simulator Screenshot 5](https://github.com/user-attachments/assets/8fa84e7e-a28e-4432-a125-b28b249e2ce0)
-![Screenshot 6](https://github.com/user-attachments/assets/17db5c54-912e-4f46-b68b-ced2ea7e2b35)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/99b1849e-87b6-46b5-9ebc-fbe1972c7b40" width="48%" />
+  <img src="https://github.com/user-attachments/assets/3b5a3556-597c-4c68-b1d4-7ad8e03dc5d4" width="48%" />
+</div>
 
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/505dbf10-b20c-417a-b285-908830b46aec" width="48%" />
+  <img src="https://github.com/user-attachments/assets/7a918389-b834-4bb1-aef8-ec678a8d169d" width="48%" />
+</div>
+
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/user-attachments/assets/8fa84e7e-a28e-4432-a125-b28b249e2ce0" width="48%" />
+  <img src="https://github.com/user-attachments/assets/17db5c54-912e-4f46-b68b-ced2ea7e2b35" width="48%" />
+</div>
 
 
 

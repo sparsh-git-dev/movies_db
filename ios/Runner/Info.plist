@@ -3,6 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
+	<!-- <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>sparsh_movies_db.com</string>
+        </array>
+      </dict>
+    </array> -->
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 	<string>Movies Db</string>
